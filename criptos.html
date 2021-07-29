@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: linear-gradient(135deg, rgb(255, 168, 168) 10%, rgb(252, 255, 0) 100%);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .header {
+        padding: 20px;
+        text-align: center;
+        position: relative;
+      }
+   
+      .header h1 {
+        font-size: 35px;
+        color: #fd5959;
+      }
+      .header p {
+        margin-top: 10px;
+        font-size: 20px;
+      }
+      .header a {
+        color: black;
+      }
+      .header a:hover{
+        color: #fcff82;
+      }
+      .topnav {
+        overflow: hidden;
+    border: 3px solid #fd5959;
+      }
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+      }
+      .topnav a:hover {
+        background-color: #fcff82;
+        color: black;
+        text-decoration: underline;
+      }
+      .column {
+        float: left;
+        padding: 10px;
+        width: 33.3%;
+      }
+.column.side p {
+  margin-top: 10px;
+}
+      .column.middle p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+.column.middle q {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #fd5959;
+}
+.column.side ul {
+  text-align: center;
+  list-style: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.row {
+ position: relative;
+ display: flex;
+}
+.row::before {
+  content: "";
+  background-image: url("images/bitcoin.png");
+background-size: auto;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 20%;
+}
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .text {
+        position: relative;
+        color: black;
+      }
+      @media screen and (max-width: 600px) {
+        .column.side,
+        .column.middle {
+          width: 100%;
+        }
+      }
+      footer {
+        background-color: #fcff82;
+      }
+      .button {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      button {
+        margin-top: 15px;
+        padding: 20px;
+        border-radius: 15px;
+        font-size: 15px;
+        background-color: #fd5959;
+        border: 2px solid black;
+        color: white;
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      button:hover {
+        background-color: #fcff82;
+        color: black;
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      .footer {
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Bitcoin Mania</h1>
+      <p><a href="https://bitcoin.org" target="_blank">The World's leading cryptocurrency</a></p>
+    </div>
+    <div class="topnav">
+      <a href="#">Blog</a>
+      <a href="#">Markets</a>
+      <a href="#">Trade</a>
+    </div>
+    <div class="row">
+      <div class="text">
+      <div class="column side">
+        <h2>How does Bitcoin work?</h2>
+        <p>When Alice makes a transaction to Bob, she’s not sending funds in the way you’d expect. It’s not like the digital equivalent of handing him a dollar bill. It’s more like her writing on a sheet of paper (that everyone can see) that she’s giving one dollar to Bob. When Bob goes to send those same funds to Carol, she can see that Bob has them by looking at the sheet.
+          <br>
+          The sheet is a particular kind of database called a <strong>blockchain</strong>. Network participants all have an identical copy of this stored on their devices.
+          <br>
+          <br>
+          When a user makes a payment, they broadcast it directly to the peer-to-peer network – there isn’t a centralized bank or institution to process transfers. In order to add new information, the Bitcoin blockchain uses a special mechanism called mining. It is through this process that new blocks of transactions are recorded in the blockchain.
+        </p>
+      </div>
+      <div class="column middle">
+        <h2>What is Bitcoin?</h2>
+        <p>
+          Bitcoin is a digital form of cash. But unlike the fiat currencies
+          you’re used to, there is no central bank controlling it. Instead, the
+          financial system in Bitcoin is run by thousands of computers
+          distributed around the world. Anyone can participate in the ecosystem
+          by downloading open-source software.
+          <br />
+          <br />
+          Bitcoin was the first cryptocurrency, announced in 2008 (and launched
+          in 2009). It provides users with the ability to send and receive
+          digital money (bitcoins, with a lower-case b, or BTC). What makes it
+          so attractive is that it can’t be censored, funds can’t be spent more
+          than once, and transactions can be made at any time, from anywhere.
+          <br>
+          <br>
+          People use Bitcoin for a number of reasons. Many appreciate it for its permissionless nature – anyone with an Internet connection can send and receive it. It’s a bit like cash in that no one can stop you from using it, but its digital presence means that it can be transferred globally.
+          <hr>
+          <q><em>Bitcoin is decentralized, censorship-resistant, secure, and
+          borderless.</em></q>
+        </p>
+      </div>
+      <div class="column side">
+        <h2>What can I buy with Bitcoin?</h2>
+        <p>There are a lot of things you can buy with Bitcoin. At this stage, it can be difficult (though not impossible) to locate merchants that accept Bitcoin in physical stores. However, you’ll still be able to find websites that accept it or allow you to purchase gift cards with it for other services.
+<br>
+Just to name a few, some of the things you can buy with Bitcoin are:
+<ul>
+  <li>Airplane Tickets</li>
+  <li>Hotel rooms</li>
+  <li>Real Estate</li>
+  <li>Food & drink</li>
+  <li>Clothing</li>
+  <li>Online subscriptions</li>
+</ul>
+Because there’s no bank involved, you’re responsible for keeping your coins secure. Some prefer to store them on exchanges, while others take custody with a variety of wallets.
+</p>
+      </div>
+      </div>
+    </div>
+    <footer>
+    <div class="button">
+      <button>Subscribe to our newsletter Now!</button>
+    </div>
+    <div class="footer">
+      <p>Coded by Martina Boccuzzi 👩🏽‍💻</p>
+    </div>
+    </footer>
+    <script>
+      function subscribe() {
+        let name = prompt("What's your name?");
+        let email = prompt("What's your email?");
+        alert("Congratulations, your journey to the moon begins today🚀");
+      }
+      let subscribeButton = document.querySelector("button");
+      subscribeButton.addEventListener("click", subscribe);
+    </script>
+  </body>
+</html>
